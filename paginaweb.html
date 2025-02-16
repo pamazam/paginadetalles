@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles para Celebrar - Scrapbooking</title>
+    <!-- Vinculando Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vinculando el archivo de CSs -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Menú de navegación de la pagina -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4b9b9c;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="font-weight: bold; color: #6a4f94;">Detalles para Celebrar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carouselSection">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cardsSection">Herramientas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactSection">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel de imágenes -->
+<div id="carouselSection" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <!-- Imagen de cuaderno -->
+            <img src="img/WRMK.jpg" class="d-block w-100" alt="Material de Scrapbooking">
+        </div>
+        <div class="carousel-item">
+            <!-- Imagen de materiales -->
+            <img src="img/materiales.jpg" class="d-block w-100" alt="Herramientas de Scrapbooking">
+        </div>
+        <div class="carousel-item">
+            <!-- Imagen scrap -->
+            <img src="img/sixxiz.jpg" class="d-block w-100" alt="Scrapbook Tools">
+        </div>
+    </div>
+</div>
+
+<!-- Cards Section -->
+<section id="cardsSection" class="container my-5">
+    <h2 class="text-center mb-4" style="font-size: 2.5rem; font-weight: bold; font-style: italic; color: #6a4f94;">Herramientas y Consejos para Scrapbooking</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <!-- Imagen de herramientas -->
+                <img src="img/sixxiz.jpg" class="card-img-top" alt="Herramientas de Scrapbooking">
+                <div class="card-body" style="background-color: #e0bbf1;">
+                    <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold; font-style: italic; color: #4c3b69;">Herramientas Básicas</h5>
+                    <p class="card-text" style="color: #6a4f94;">El Scrapbooking es un arte que requiere de herramientas especializadas, como troqueladoras, sellos, y tintas. Estas herramientas te permiten personalizar tus proyectos y darle un toque único.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <!-- Imagen de máquinas -->
+                <img src="img/WRMK.jpg" class="card-img-top" alt="Máquinas de Scrapbooking">
+                <div class="card-body" style="background-color: #e0bbf1;">
+                    <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold; font-style: italic; color: #4c3b69;">Máquinas de Scrap</h5>
+                    <p class="card-text" style="color: #6a4f94;">Las máquinas de corte y embellecimiento son esenciales para los scrapbooks más avanzados. Estas herramientas permiten cortar con precisión y crear diseños complejos que marcan la diferencia en tus proyectos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <!-- Imagen de consejos -->
+                <img src="img/fuse.jpg" class="card-img-top" alt="Consejos de Scrapbooking">
+                <div class="card-body" style="background-color: #e0bbf1;">
+                    <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold; font-style: italic; color: #4c3b69;">Consejos Útiles</h5>
+                    <p class="card-text" style="color: #6a4f94;">Cuando comienzas en Scrapbooking, es importante tener en cuenta algunos consejos prácticos: empieza con proyectos pequeños, organiza tus materiales y no tengas miedo de experimentar con colores y texturas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Formulario de novedades -->
+<section id="contactSection" class="container my-5">
+    <h2 class="text-center mb-4" style="font-size: 2.5rem; font-weight: bold; font-style: italic; color: #6a4f94;">Suscríbete para Novedades</h2>
+    <form action="#" method="post">
+        <div class="mb-3">
+            <label for="nombre" class="form-label" style="color: #4c3b69;">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="pais" class="form-label" style="color: #4c3b69;">País</label>
+            <input type="text" class="form-control" id="pais" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label" style="color: #4c3b69;">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <button type="submit" class="btn" style="background-color: #4b9b9c; color: white;">Suscribirme</button>
+    </form>
+</section>
+
+<!-- Footer pie de pagina -->
+<footer class="bg-dark text-white text-center py-4">
+    <p><strong>Detalles para Celebrar</strong><br>Tegucigalpa, Honduras<br>Email: <a href="mailto:detallesparacelebrar@gmail.com" class="text-white">detallesparacelebrar@gmail.com</a></p>
+</footer>
+
+<!-- de donde los saque Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
